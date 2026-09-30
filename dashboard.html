@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Sravuu Investigation 🔬</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <audio id="birthdayMusic"
+           loop
+           preload="auto">
+        <source src="music/birthday.mp3"
+                type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle"
+            class="music-toggle"
+            type="button">
+        🎵
+    </button>
+
+    <div class="birthday-balloon balloon-1">
+        🎈
+    </div>
+
+    <div class="birthday-balloon balloon-2">
+        🎈
+    </div>
+
+    <div class="birthday-balloon balloon-3">
+        🎈
+    </div>
+
+    <div class="birthday-heart heart-1">
+        💗
+    </div>
+
+    <div class="birthday-heart heart-2">
+        💗
+    </div>
+
+    <div class="birthday-heart heart-3">
+        💕
+    </div>
+
+    <div class="birthday-sparkle sparkle-1">
+        ✨
+    </div>
+
+    <div class="birthday-sparkle sparkle-2">
+        ✨
+    </div>
+
+    <div class="birthday-sparkle sparkle-3">
+        ⭐
+    </div>
+
+    <div class="journey-header">
+        <div class="journey-title">
+            Sravuu Investigation 🔬
+        </div>
+
+        <div class="journey-progress">
+            <div id="journeyProgress"
+                 class="journey-progress-fill">
+            </div>
+        </div>
+
+        <div id="stepCounter">
+            STEP 01 / 05
+        </div>
+    </div>
+
+    <main class="dashboard-container">
+
+        <section class="investigation-step active"
+                 data-step="1">
+
+            <div class="step-number">
+                STEP 01
+            </div>
+
+            <div class="step-icon brain-icon">
+                🧠
+            </div>
+
+            <h1 class="step-title">
+                Sravuu Analysis
+            </h1>
+
+            <p class="step-description">
+                Before our highly advanced scientific
+                equipment reveals the results...
+                <br><br>
+                <strong>
+                    YOU must guess first. 😏
+                </strong>
+            </p>
+
+            <div id="question1"
+                 class="guess-question">
+
+                <div class="question-number">
+                    ANALYSIS QUESTION #01
+                </div>
+
+                <h2>
+                    💗 How cute do you think you are?
+                </h2>
+
+                <div class="guess-options">
+
+                    <button class="guess-option"
+                            data-value="50"
+                            data-question="cute">
+                        A. 50% 😌
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="75"
+                            data-question="cute">
+                        B. 75% 🙂
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="90"
+                            data-question="cute">
+                        C. 90% 😎
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="99"
+                            data-question="cute">
+                        D. 99% 😏
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div id="question2"
+                 class="guess-question hidden">
+
+                <div class="question-number">
+                    ANALYSIS QUESTION #02
+                </div>
+
+                <h2>
+                    😈 How much chaos do you create?
+                </h2>
+
+                <div class="guess-options">
+
+                    <button class="guess-option"
+                            data-value="25"
+                            data-question="chaos">
+                        A. 25% 😇
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="50"
+                            data-question="chaos">
+                        B. 50% 🙂
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="75"
+                            data-question="chaos">
+                        C. 75% 😈
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="94"
+                            data-question="chaos">
+                        D. 94% 💀
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div id="question3"
+                 class="guess-question hidden">
+
+                <div class="question-number">
+                    ANALYSIS QUESTION #03
+                </div>
+
+                <h2>
+                    🎭 How dramatic are you?
+                </h2>
+
+                <div class="guess-options">
+
+                    <button class="guess-option"
+                            data-value="20"
+                            data-question="drama">
+                        A. 20% 😇
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="50"
+                            data-question="drama">
+                        B. 50% 😌
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="75"
+                            data-question="drama">
+                        C. 75% 🎭
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="91"
+                            data-question="drama">
+                        D. 91% 👀
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div id="question4"
+                 class="guess-question hidden">
+
+                <div class="question-number">
+                    ANALYSIS QUESTION #04
+                </div>
+
+                <h2>
+                    🤯 How often do you confuse Sanjay?
+                </h2>
+
+                <div class="guess-options">
+
+                    <button class="guess-option"
+                            data-value="10"
+                            data-question="confuse">
+                        A. Never 😇
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="40"
+                            data-question="confuse">
+                        B. Sometimes 🙂
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="75"
+                            data-question="confuse">
+                        C. Frequently 😈
+                    </button>
+
+                    <button class="guess-option"
+                            data-value="100"
+                            data-question="confuse">
+                        D. Always 💀
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div id="analysisLoading"
+                 class="analysis-loading hidden">
+
+                <div class="loading-title">
+                    🔬 ANALYZING YOUR ANSWER
+                </div>
+
+                <div id="loadingText">
+                    Reading personality data...
+                </div>
+
+                <div class="loading-bar">
+                    <div id="loadingFill">
+                    </div>
+                </div>
+
+                <div id="loadingPercent">
+                    0%
+                </div>
+
+            </div>
+
+
+            <div id="guessResult"
+                 class="guess-result hidden">
+
+                <div id="guessResultLabel"
+                     class="result-label">
+                    🔬 SCIENTIFIC RESULT
+                </div>
+
+                <div id="guessResultText"
+                     class="result-message">
+                </div>
+
+                <div id="guessComparison">
+                </div>
+
+                <button id="nextQuestion"
+                        class="main-button">
+                    Next Question →
+                </button>
+
+            </div>
+
+
+            <div id="analysisResult"
+                 class="result-card hidden">
+
+                <div class="result-label">
+                    🧪 FINAL SCIENTIFIC ANALYSIS
+                </div>
+
+                <div class="result-message">
+                    Too Sravuu to be measured. 😂
+                </div>
+
+            </div>
+
+
+            <button id="step1Next"
+                    class="main-button next-button hidden">
+                Continue Investigation →
+            </button>
+
+        </section>
+
+
+        <section class="investigation-step"
+                 data-step="2">
+
+            <div class="step-number">
+                STEP 02
+            </div>
+
+            <div class="step-icon">
+                🧪
+            </div>
+
+            <h1 class="step-title">
+                Sravuu Personality Scan
+            </h1>
+
+            <p class="step-description">
+                Unfortunately, the first analysis was not enough.
+                <br><br>
+                One final personality test is required. 😏
+            </p>
+
+            <div class="personality-question">
+
+                <div class="question-number">
+                    PERSONALITY QUESTION
+                </div>
+
+                <h2>
+                    😇 How innocent are you?
+                </h2>
+
+                <div class="guess-options">
+
+                    <button class="personality-option"
+                            data-value="100">
+                        A. 100% Innocent 😇
+                    </button>
+
+                    <button class="personality-option"
+                            data-value="75">
+                        B. 75% Innocent 🙂
+                    </button>
+
+                    <button class="personality-option"
+                            data-value="50">
+                        C. 50% Innocent 😏
+                    </button>
+
+                    <button class="personality-option"
+                            data-value="12">
+                        D. Innocent? What's that? 😂
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="personalityLoading"
+                 class="analysis-loading hidden">
+
+                <div class="loading-title">
+                    🧪 RUNNING PERSONALITY SCAN
+                </div>
+
+                <div id="personalityLoadingText">
+                    Checking innocence levels...
+                </div>
+
+                <div class="loading-bar">
+                    <div id="personalityLoadingFill">
+                    </div>
+                </div>
+
+                <div id="personalityLoadingPercent">
+                    0%
+                </div>
+
+            </div>
+
+
+            <div id="personalityResult"
+                 class="guess-result hidden">
+
+                <div class="result-label">
+                    🚨 PERSONALITY TEST RESULT
+                </div>
+
+                <div class="personality-big-result">
+                    12% INNOCENT
+                </div>
+
+                <div class="result-message">
+                    The remaining 88% has been classified as
+                    <strong>PURE CHAOS. 😂</strong>
+                </div>
+
+                <div id="personalityComparison">
+                </div>
+
+                <button id="step2Next"
+                        class="main-button next-button">
+                    Continue Investigation →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="investigation-step"
+                 data-step="3">
+
+            <div class="step-number">
+                STEP 03
+            </div>
+
+            <div class="step-icon">
+                🚨
+            </div>
+
+            <h1 class="step-title">
+                Sravuu Incident Report
+            </h1>
+
+            <p class="step-description">
+                The investigation has uncovered
+                several suspicious incidents...
+            </p>
+
+
+            <div class="incident-card">
+
+                <div class="incident-icon">
+                    😂
+                </div>
+
+                <div>
+                    <h3>
+                        Incident #001
+                    </h3>
+
+                    <p>
+                        Made Sanjay laugh when he was
+                        supposed to be serious.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="incident-card">
+
+                <div class="incident-icon">
+                    🤦
+                </div>
+
+                <div>
+                    <h3>
+                        Incident #002
+                    </h3>
+
+                    <p>
+                        Caused unnecessary confusion
+                        for absolutely no reason.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="incident-card">
+
+                <div class="incident-icon">
+                    😈
+                </div>
+
+                <div>
+                    <h3>
+                        Incident #003
+                    </h3>
+
+                    <p>
+                        Somehow managed to create
+                        chaos and look innocent.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="result-card">
+
+                <div class="result-label">
+                    🚨 INVESTIGATION STATUS
+                </div>
+
+                <div class="result-message">
+                    Highly suspicious...
+                    but extremely lovable. 😂
+                </div>
+
+            </div>
+
+
+            <button id="step3Next"
+                    class="main-button next-button">
+                Continue Investigation →
+            </button>
+
+        </section>
+
+
+        <section class="investigation-step"
+                 data-step="4">
+
+            <div class="step-number">
+                STEP 04
+            </div>
+
+            <div class="step-icon">
+                ❤️
+            </div>
+
+            <h1 class="step-title">
+                Sravuu Impact Analysis
+            </h1>
+
+            <p class="step-description">
+                Measuring the effect of Sravuu
+                on the people around her...
+            </p>
+
+
+            <div class="impact-box">
+
+                <div class="impact-number">
+                    100%
+                </div>
+
+                <div class="impact-title">
+                    Happiness Increase
+                </div>
+
+                <div class="impact-text">
+                    Somehow, the room becomes
+                    more fun when Sravuu is around.
+                </div>
+
+            </div>
+
+
+            <div class="impact-box">
+
+                <div class="impact-number">
+                    99%
+                </div>
+
+                <div class="impact-title">
+                    Laughing Probability
+                </div>
+
+                <div class="impact-text">
+                    Scientific instruments stopped
+                    responding after this result.
+                </div>
+
+            </div>
+
+
+            <div class="impact-box">
+
+                <div class="impact-number">
+                    ∞
+                </div>
+
+                <div class="impact-title">
+                    Friendship Value
+                </div>
+
+                <div class="impact-text">
+                    This measurement cannot be
+                    calculated using ordinary numbers.
+                </div>
+
+            </div>
+
+
+            <button id="step4Next"
+                    class="main-button next-button">
+                One Last Investigation →
+            </button>
+
+        </section>
+
+
+        <section class="investigation-step final-step"
+                 data-step="5">
+
+            <div class="step-number">
+                FINAL SURPRISE
+            </div>
+
+            <div class="step-icon final-icon">
+                🎂
+            </div>
+
+            <h1 class="step-title">
+                One Last Thing...
+            </h1>
+
+            <p class="step-description">
+                The investigation is complete...
+                <br>
+                but there is one final birthday test. 💗
+            </p>
+
+
+            <div id="finalLockScreen"
+                 class="final-lock-screen">
+
+                <div class="system-alert">
+                    ⚠️ SYSTEM ALERT
+                </div>
+
+                <h2>
+                    Additional Birthday Anomaly Detected
+                </h2>
+
+                <p>
+                    Normal investigation protocol
+                    has been suspended.
+                </p>
+
+                <p class="warning-text">
+                    Sravuu birthday.exe is still running...
+                </p>
+
+                <button id="unlockBirthday"
+                        class="main-button">
+                    Investigate the anomaly 🔍
+                </button>
+
+            </div>
+
+
+            <div id="birthdayTerminal"
+                 class="birthday-terminal hidden">
+
+                <div class="terminal-title">
+                    💻 SRAVUU_BIRTHDAY.exe
+                </div>
+
+                <div id="terminalLines"
+                     class="terminal-lines">
+                </div>
+
+                <div class="terminal-progress">
+                    <div id="terminalProgressFill">
+                    </div>
+                </div>
+
+                <div id="terminalPercent">
+                    0%
+                </div>
+
+            </div>
+
+
+            <div id="birthdayCakeArea"
+                 class="birthday-cake-area hidden">
+
+                <div class="candle-instruction">
+
+                    🕯️ MAKE A WISH! 🕯️
+
+                    <br>
+
+                    <span>
+                        Tap each candle to blow it out.
+                    </span>
+
+                </div>
+
+
+                <div class="cake-container">
+
+                    <div class="candle-wrapper"
+                         data-candle="1">
+
+                        <div class="flame">
+                            🔥
+                        </div>
+
+                        <div class="candle">
+                        </div>
+
+                    </div>
+
+
+                    <div class="candle-wrapper"
+                         data-candle="2">
+
+                        <div class="flame">
+                            🔥
+                        </div>
+
+                        <div class="candle">
+                        </div>
+
+                    </div>
+
+
+                    <div class="candle-wrapper"
+                         data-candle="3">
+
+                        <div class="flame">
+                            🔥
+                        </div>
+
+                        <div class="candle">
+                        </div>
+
+                    </div>
+
+
+                    <div class="cake">
+
+                        <div class="cake-top">
+                            <span>💗</span>
+                            <span>💗</span>
+                            <span>💗</span>
+                        </div>
+
+                        <div class="cake-middle">
+                            HAPPY BIRTHDAY
+                        </div>
+
+                        <div class="cake-bottom">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="candleCounter"
+                     class="candle-counter">
+
+                    Candles remaining:
+                    <strong>3</strong>
+
+                </div>
+
+
+                <p id="micStatus"
+                   class="mic-status">
+
+                    Tap the candles one by one. 😊
+
+                </p>
+
+
+                <div id="candleMessage"
+                     class="candle-message">
+                </div>
+
+            </div>
+
+
+            <div id="birthdayWish"
+                 class="birthday-wish hidden">
+
+
+                <!-- TWO DRAGGABLE BIRTHDAY PHOTOS -->
+
+                <div class="birthday-photo-layout">
+
+                    <div class="birthday-photo-card birthday-photo-left">
+
+                        <div class="photo-heart">
+                            💗
+                        </div>
+
+                        <img src="photos/photo1.jpg"
+                             alt="Sravuu birthday memory 1">
+
+                    </div>
+
+
+                    <div class="birthday-photo-card birthday-photo-right">
+
+                        <div class="photo-heart">
+                            💕
+                        </div>
+
+                        <img src="photos/photo3.jpg"
+                             alt="Sravuu birthday memory 3">
+
+                    </div>
+
+                </div>
+
+
+                <div class="wish-celebration">
+                    🎉 🎂 🎉
+                </div>
+
+
+                <div class="huge-reveal">
+                    HUGE REVEAL
+                </div>
+
+
+                <h2>
+                    INVESTIGATION FAILED. 😂
+                </h2>
+
+
+                <p class="failure-text">
+                    We couldn't find a single reason
+                    why Sravuu is this awesome.
+                </p>
+
+
+                <h3>
+                    HAPPY BIRTHDAY
+                </h3>
+
+
+                <h1>
+                    SRAVUU! 💗
+                </h1>
+
+
+                <div id="wishText"
+                     class="wish-text">
+                </div>
+
+
+                <div class="wish-signature">
+                    — From Sanjay 💗
+                </div>
+
+
+                <div id="secretArea"
+                     class="secret-area hidden">
+
+                    <p>
+                        Psst... one final thing 👀
+                    </p>
+
+
+                    <button id="secretButton"
+                            class="secret-button">
+
+                        Don't click this 😈
+
+                    </button>
+
+
+                    <div id="secretMessage"
+                         class="secret-message hidden">
+
+                        <strong>
+                            😂 I TOLD YOU NOT TO CLICK IT!
+                        </strong>
+
+                        <br><br>
+
+                        Okay okay...
+
+                        <br>
+
+                        Happy Birthday again, Sravuu. 💗🎂
+
+
+                        <!-- =================================
+                             CHILDHOOD PHOTO SURPRISE
+                        ================================== -->
+
+                        <div class="childhood-memory-surprise">
+
+                            <div class="childhood-memory-title">
+                                🥹 A LITTLE THROWBACK SURPRISE 💗
+                            </div>
+
+                            <div class="childhood-photo-gallery">
+
+                                <div class="childhood-photo-card childhood-photo-one">
+
+                                    <div class="childhood-photo-label">
+                                        Little Sravuu 💕
+                                    </div>
+
+                                    <img src="photos/childhood1.jpg"
+                                         alt="Sravuu childhood memory 1">
+
+                                </div>
+
+
+                                <div class="childhood-photo-card childhood-photo-two">
+
+                                    <div class="childhood-photo-label">
+                                        Baby Sravuu 😂
+                                    </div>
+
+                                    <img src="photos/childhood2.jpg"
+                                         alt="Sravuu childhood memory 2">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="childhood-memory-message">
+                                From tiny Sravuu to the amazing chaos she is today. 😂💗
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="wish-confetti">
+                    🎊 ✨ 💕 🎊 ✨ 🎈
+                </div>
+
+
+                <button id="celebrateAgain"
+                        class="main-button celebrate-again-button"
+                        type="button">
+
+                    🔄 Celebrate Again 🎉
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
